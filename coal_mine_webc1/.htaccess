@@ -1,0 +1,6 @@
+# directory browsing
+Options All -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://localhost/coal_mine_webc1/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://localhost/coal_mine_webc1$ [NC]
+RewriteRule .*\.(wav|swf|jpg|jpeg|gif|png|bmp|js|css|py)$ - [F,NC,L]
